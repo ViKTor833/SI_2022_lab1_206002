@@ -1,0 +1,138 @@
+4. Со наредбата "git clone https://github.com/ViKTor833/SI_2022_lab1_206002.git", го клонирав оддалечениот репозиториум на мојот компјутер.
+
+5. Во локалниот репозиториум ја креирав датотеката, а потоа со наредбата "git add shopping_list.txt" датотеката ја ставив на сцена, и со 
+наредбата "git commit -m 'Add 5 items to the shopping list' " направив commit на тој фајл.
+
+6. Откако ја променив текстуалната датотека, повторно ја ставив на сцена со наредбата "git add shopping_list.txt", а потоа со наредбата 
+"git commit -m 'Add quantities to the items' ", направив нов commit.
+
+7. Со наредбите "git branch branch1" и "git branch branch2" креирав 2 гранки.
+
+8. 
+D:\Git_Lab1\SI_2022_lab1_206002>git log
+commit 612a16c91bb230ae39d3a073b7e298e2b5b53673 (HEAD -> master, branch2, branch1)
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 16:23:00 2022 +0200
+
+    Add quantities to the items
+
+commit dc9dacfef72aa9e78faa7acc03d6ec5addf7e045
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 16:15:25 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ac323700db6c3652d1e5f1f05b8675c76f5f7ec1 (origin/master, origin/HEAD)
+Author: ViKTor833 <101993977+ViKTor833@users.noreply.github.com>
+Date:   Sun Apr 10 16:01:17 2022 +0200
+
+    Update README.md
+
+commit 482b4dbc84c816facb114e59517109066c4483fd
+Author: ViKTor833 <101993977+ViKTor833@users.noreply.github.com>
+Date:   Sun Apr 10 15:59:44 2022 +0200
+
+    Initial commit
+
+9. најпрво направив "git push" додека се наоѓам на master гранката, потоа со "git checkout branch1" се префрлив на branch1 гранката и со
+"git push --set-upstream origin branch1" ја прикачив новата гранка. Потоа се префрлив на branch2 со наредбата "git checkout branch2" и ја прикачив со
+ наредбата "git push --set-upstream origin branch2".
+
+10. Се префрлив на branch1 со наредбата "git checkout branch1".
+
+11. Откако ја сменив содржината на текстуалната датотека таа премина во modified. Најпрво со наредбата "git add shopping_list.txt" ја ставив на сцена, а потоа со
+"git commit  -m 'Change quantity of item #5' " направив нов commit кој што се додаде на branch1.
+
+12. Со наредбата "git chechkout master" се вратив на master гранката.
+
+13. Откако направив измена на текстуалната датотека, таа премина во modified и за да поставам на сцена ја употребив командата "git add shopping_list.txt". Потоа со
+"git commit -m 'Change quantity of item #2' " направив нов commit на master гранката.
+
+14. Најпрво додека се наоѓам на master гранката направив "git push", а потоа со "git checkout branch1" се префрлив на branch1 и исто така направив "git push". И
+на крај се префрлив на branch2 со "git checkout branch2" и направив "git push".
+
+15. Со наредбата "git checkout branch2" се префрлив на branch2.
+
+16. Најпрво направив промена во текстуалната датотека, при што таа помина во фаза на modified, потоа со наребдата "git add shopping_list.txt" ја додаов на сцена
+и со "git commit -m 'Modify item #4' " додадов нов commit на branch2.
+
+17.
+D:\Git_Lab1\SI_2022_lab1_206002>git log
+commit ee759761186a16ee6a8a86157a8b10cfd7628dc8 (HEAD -> branch2)
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 17:30:32 2022 +0200
+
+    Modify item #4
+
+commit 612a16c91bb230ae39d3a073b7e298e2b5b53673 (origin/branch2)
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 16:23:00 2022 +0200
+
+    Add quantities to the items
+
+commit dc9dacfef72aa9e78faa7acc03d6ec5addf7e045
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 16:15:25 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ac323700db6c3652d1e5f1f05b8675c76f5f7ec1
+Author: ViKTor833 <101993977+ViKTor833@users.noreply.github.com>
+Date:   Sun Apr 10 16:01:17 2022 +0200
+
+    Update README.md
+
+commit 482b4dbc84c816facb114e59517109066c4483fd
+Author: ViKTor833 <101993977+ViKTor833@users.noreply.github.com>
+Date:   Sun Apr 10 15:59:44 2022 +0200
+
+    Initial commit
+
+18. По додавањето на производ во текстуалниот документ, најпрво го ставив на сцена со "git add shopping_list.txt", 
+а потоа за да ги поставам новите промени на последниот commit, без да направам нов, ја искористив наредбата 
+"git commit --amend -m 'Modify item #4 and add item #6' ".
+
+19.
+D:\Git_Lab1\SI_2022_lab1_206002>git log
+commit 04493459037e6f07c088ff4bae8ff4a7bc3bc5b7 (HEAD -> branch2)
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 17:30:32 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit 612a16c91bb230ae39d3a073b7e298e2b5b53673 (origin/branch2)
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 16:23:00 2022 +0200
+
+    Add quantities to the items
+
+commit dc9dacfef72aa9e78faa7acc03d6ec5addf7e045
+Author: ViKTor883 <viktor003arsovski@yahoo.com>
+Date:   Sun Apr 10 16:15:25 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit ac323700db6c3652d1e5f1f05b8675c76f5f7ec1
+Author: ViKTor833 <101993977+ViKTor833@users.noreply.github.com>
+Date:   Sun Apr 10 16:01:17 2022 +0200
+
+    Update README.md
+
+commit 482b4dbc84c816facb114e59517109066c4483fd
+Author: ViKTor833 <101993977+ViKTor833@users.noreply.github.com>
+Date:   Sun Apr 10 15:59:44 2022 +0200
+
+    Initial commit
+
+20. Прво со наредбата "git checkout master" се префрлив на master гранката, а потоа со "git merge branch1" ги споив гранката branch1 кон гранката master.
+При спојувањето немаше никакви конфликти, и тоа беше напревено со "ort" стратегија на спојување.
+
+21. Со наредбата "git merge barnch2" се обидов да ја спојам гранката branch2 кон master, но се појави конфликт во текстуалната датотека shopping_list.txt .
+Потоа ја отворив текстуалната датотека и конфликтот го решив со вклучување на производи и од двете гранки (опции) во конечната верзија. После ова фајлот го 
+поставив на сцена со "git add shopping_list.txt" И направив нов commit на master гранката со наредбата "git commit -m 'Resolved merge conflict' ".
+
+22. Во овој чекор ја додадов текстуалната датотека со документација, најпрво направив "git add 206002.txt" за да ја додадам на сцена, а потоа со
+"git commit -m 'Add docs' " додадов нов commit.
+
+23. Најпрво додека се наоѓам на master гранката направив "git push", а потоа со "git checkout branch1" се префрлив на branch1 и исто така направив "git push". И
+на крај се префрлив на branch2 со "git checkout branch2" и направив "git push".
