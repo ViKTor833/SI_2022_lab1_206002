@@ -3,3 +3,6 @@ Cheese x 1
 Sausages x 2
 Butter x 2
 Eggs x 4
+Chocolate x 2
+Pudding x 1
+
