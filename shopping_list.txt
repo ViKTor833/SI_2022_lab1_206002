@@ -1,5 +1,5 @@
-Milk
-Cheese 
-Sausages
-Butter 
-Eggs 
+Milk x 2
+Cheese x 2
+Sausages x 2
+Butter x 2
+Eggs x 2
