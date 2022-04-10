@@ -2,4 +2,4 @@ Milk x 2
 Cheese x 1
 Sausages x 2
 Butter x 2
-Eggs x 2
+Eggs x 4
